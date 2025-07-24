@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+body {
+  background-color: red;
+  /* یا */
+  /*background-image: url('/path/to/your/image.jpg');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
