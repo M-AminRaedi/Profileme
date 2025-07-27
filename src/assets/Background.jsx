@@ -5,18 +5,20 @@ const Background = ({ children }) => {
     return (
         <Box
             sx={{
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                height: "100vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
                 position: "relative",
                 minHeight: "100vh",
                 boxSizing: "border-box",
                 backgroundImage: `url(${bgImage})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                p: 3,
                 overflowY: "auto",
+
                 "&::before": {
                     content: '""',
                     position: "absolute",
