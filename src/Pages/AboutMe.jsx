@@ -58,13 +58,6 @@ const AboutMe = () => {
                     "&::-webkit-scrollbar": {
                         width: "8px",
                     },
-                    "&::-webkit-scrollbar-thumb": {
-                        backgroundColor: "#888",
-                        borderRadius: "4px",
-                    },
-                    "&::-webkit-scrollbar-track": {
-                        backgroundColor: "#f1f1f1",
-                    },
                 }}
             >
                 <Grid container sx={{mx: 3, color: "black"}}>
