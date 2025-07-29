@@ -7,7 +7,7 @@ const DevInfo = ({ label, value }) => {
             sx={{
                 display: "flex",
                 alignItems: "center",
-                margin: "25px 28px",
+                margin: "30px 25px",
                 fontSize: "18px",
                 fontFamily: "vazir",
             }}

@@ -1,10 +1,4 @@
-
-import HtmlIcon from "../assets/icons/html5-original.svg";
-import CssIcon from "../assets/icons/css3-original.svg";
-import JsIcon from "../assets/icons/javascript-original.svg";
-import ReactIcon from "../assets/icons/react-original.svg";
-import NodeIcon from "../assets/icons/nodejs-original.svg";
-import GitIcon from "../assets/icons/git-original.svg";
+import {JavascriptIcon,GitIcon,ReactIcon,CssIcon,HtmlIcon} from "../assets/icons/iconIndex"
 
 export const devSkills = {
     htmlSkill: {
@@ -19,7 +13,7 @@ export const devSkills = {
     },
     jsSkill: {
         id: 2,
-        icon: JsIcon,
+        icon: JavascriptIcon,
         color: "warning",
     },
     reactSkill: {
