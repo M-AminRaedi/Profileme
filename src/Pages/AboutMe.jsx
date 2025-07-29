@@ -35,7 +35,7 @@ const AboutMe = () => {
                 return (Math.min(oldProgress + diff, 90))
             });
 
-        },130);
+        }, 130);
         return () => {
             clearTimeout(timer)
         }
@@ -132,11 +132,26 @@ const AboutMe = () => {
                         </Divider>
 
                         <Box sx={{mt: 2}}>
-                            <Skill name={htmlSkill.name} color={htmlSkill.color} value={html}/>
-                            <Skill name={cssSkill.name} color={cssSkill.color} value={css}/>
-                            <Skill name={jsSkill.name} color={jsSkill.color} value={javascript}/>
-                            <Skill name={reactSkill.name} color={reactSkill.color} value={reactJS}/>
-                            <Skill name={gitSkill.name} color={gitSkill.color} value={git}/>
+                            <Skill
+                                name={htmlSkill.name}
+                                icon={htmlSkill.icon}
+                                color={htmlSkill.color} value={html}/>
+                            <Skill
+                                name={cssSkill.name}
+                                icon={cssSkill.icon}
+                                color={cssSkill.color} value={css}/>
+                            <Skill
+                                name={jsSkill.name}
+                                icon={jsSkill.icon}
+                                color={jsSkill.color} value={javascript}/>
+                            <Skill
+                                name={reactSkill.name}
+                                icon={reactSkill.icon}
+                                color={reactSkill.color} value={reactJS}/>
+                            <Skill
+                                name={gitSkill.name}
+                                icon={gitSkill.icon}
+                                color={gitSkill.color} value={git}/>
                         </Box>
                     </Grid>
                 </Grid>
