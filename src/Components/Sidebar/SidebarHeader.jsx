@@ -30,7 +30,6 @@ const SidebarHeader = () => {
                     color: "#e8eaf6",
                 }}
             />
-            <Typography variant="h6">برنامه نویس فرانت اند</Typography>
         </>
     );
 }
