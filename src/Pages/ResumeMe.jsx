@@ -1,8 +1,7 @@
-import {Card, CardContent, Grid, Divider, Chip, Typography, Box} from "@mui/material";
-import DevInfo from "./Component/DevInfo";
-import TextMe from "./Component/TextMe";
-import Skill from "./Component/Skill";
-
+import {Card, CardContent, Divider, Chip, Typography, Grid, Box} from "@mui/material";
+import {DataObjectOutlined, SchoolRounded} from "@mui/icons-material";
+import TimeEdu from "./Component/TimeEdu";
+import TimeWork from "./Component/TimeWork";
 const ResumeMe = () => {
     return (
         <Card
@@ -15,7 +14,7 @@ const ResumeMe = () => {
         >
             <CardContent
                 sx={{
-                    maxHeight: "calc(100vh - 64px)", // کسر ارتفاع هدر یا حاشیه (64px نمونه است)
+                    maxHeight: "calc(100vh - 64px)",
                     overflowY: "auto",
                     "&::-webkit-scrollbar": {
                         width: "8px",
@@ -23,11 +22,9 @@ const ResumeMe = () => {
                 }}
             >
                 <Divider
-                    textAlign="center"
+                    variant="fullWidth"
+                    textAlign="right"
                     sx={{
-                        width: "34%",
-                        mx: "auto",
-                        my: "auto",
                         "&::before, &::after": {
                             borderColor: "red",
                             borderTop: "1px solid white",
@@ -39,11 +36,67 @@ const ResumeMe = () => {
                         sx={{marginTop: "10px", backgroundColor: "white"}}
                         label={
                             <Typography variant="body1" sx={{textAlign: "center", color: "black"}}>
-                                رزومه من
+                                مشخصات
                             </Typography>
                         }
                     />
                 </Divider>
+                <Grid
+                    container
+                    sx={{
+                        mt: 4,
+                        display: "flex",
+                        justifyContent: "space-around",
+                        flexDirection: "row-reverse",
+                    }}
+                >
+                    <Grid item xs={12} md={6}>
+                        <Divider
+                            textAlign="center"
+                            sx={{
+                                width: "500px",
+                                "&::before, &::after": {
+                                    borderColor: "warning.main",
+                                },
+                            }}
+                        >
+                            <Chip
+                                icon={<DataObjectOutlined/>}
+                                color="warning"
+                                label={
+                                    <Typography variant="body1" color="black" sx={{textAlign: "center"}}>
+                                        تجربیات
+                                    </Typography>
+                                }
+                                sx={{p: 3}}
+                            />
+                        </Divider>
+                        <TimeWork/>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <Divider
+                            textAlign="center"
+                            sx={{
+                                width: "500px",
+                                "&::before, &::after": {
+                                    borderColor: "info.main",
+                                },
+                            }}
+                        >
+                            <Chip
+                                icon={<SchoolRounded/>}
+                                color="info"
+                                label={
+                                    <Typography variant="body1" color="black" sx={{textAlign: "center"}}>
+                                        تحصیلات
+                                    </Typography>
+                                }
+                                sx={{p: 3}}
+                            />
+                        </Divider>
+                        <TimeEdu/>
+                    </Grid>
+                </Grid>
             </CardContent>
         </Card>
     );
