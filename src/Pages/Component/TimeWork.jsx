@@ -21,7 +21,7 @@ const TimeWork = () => {
                             <TimelineDot variant="outlined" >
                                 <DataObjectOutlinedIcon />
                             </TimelineDot>
-                            {index !=3 ? <TimelineConnector /> : null}
+                              {index !=3 ? <TimelineConnector /> : null}
                         </TimelineSeparator>
                         <TimelineContent>
                             <Typography variant="caption" color="warning">{item.cert}</Typography>
