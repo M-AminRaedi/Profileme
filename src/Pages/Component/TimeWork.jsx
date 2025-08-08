@@ -14,14 +14,14 @@ const TimeWork = () => {
     return (
         <Timeline position="alternate">
             {devWork.map((item, index) => {
-                const isLast = index === devWork.length - 1;
+
                 return (
                     <TimelineItem key={index}>
                         <TimelineSeparator>
-                            <TimelineDot variant="outlined" color={isLast ? "warning" : "info"}>
-                                <DataObjectOutlinedIcon color={isLast ? "warning" : "primary"} />
+                            <TimelineDot variant="outlined" >
+                                <DataObjectOutlinedIcon />
                             </TimelineDot>
-                            {!isLast && <TimelineConnector />}
+                            {index !=3 ? <TimelineConnector /> : null}
                         </TimelineSeparator>
                         <TimelineContent>
                             <Typography variant="caption" color="warning">{item.cert}</Typography>
