@@ -28,12 +28,11 @@ const ResumeMe = () => {
                         "&::before, &::after": {
                             borderColor: "red",
                             borderTop: "1px solid white",
-                            marginTop: "10px",
                         },
                     }}
                 >
                     <Chip
-                        sx={{marginTop: "10px", backgroundColor: "white"}}
+                        sx={{backgroundColor: "white"}}
                         label={
                             <Typography variant="body1" sx={{textAlign: "center", color: "black"}}>
                                 مشخصات

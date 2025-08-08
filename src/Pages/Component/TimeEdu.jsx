@@ -6,10 +6,9 @@ import {
     TimelineContent,
     TimelineConnector,
 } from "@mui/lab";
-import { Typography } from '@mui/material';
-import { SchoolRounded } from "@mui/icons-material";
-import { devEdu } from "./details";
-
+import {Typography} from '@mui/material';
+import {SchoolRounded} from "@mui/icons-material";
+import {devEdu} from "./details";
 const TimeEdu = () => {
     return (
         <Timeline position="alternate">
@@ -19,15 +18,15 @@ const TimeEdu = () => {
                     <TimelineItem key={index}>
                         <TimelineSeparator>
                             <TimelineDot variant="outlined" color={isLast ? "warning" : "info"}>
-                                <SchoolRounded color={isLast ? "warning" : "primary"} />
+                                <SchoolRounded color={isLast ? "warning" : "primary"}/>
                             </TimelineDot>
-                            {!isLast && <TimelineConnector />}
+                            {!isLast && <TimelineConnector/>}
                         </TimelineSeparator>
                         <TimelineContent>
-                            <Typography variant="caption" color="grey">{item.cert}</Typography>
-                            <Typography variant="body1" color="grey">{item.year}</Typography>
-                            <Typography variant="body2" color="grey">{item.place}</Typography>
-                            <Typography variant="body2" color="grey">{item.major}</Typography>
+                            <Typography variant="caption" color="info">{item.cert}</Typography>
+                            <Typography variant="body1" color="white">{item.year}</Typography>
+                            <Typography variant="body2" color="white">{item.place}</Typography>
+                            <Typography variant="body2" color="info">{item.major}</Typography>
                         </TimelineContent>
                     </TimelineItem>
                 );
@@ -35,5 +34,4 @@ const TimeEdu = () => {
         </Timeline>
     );
 };
-
 export default TimeEdu;
